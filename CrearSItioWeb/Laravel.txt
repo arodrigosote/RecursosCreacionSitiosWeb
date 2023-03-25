@@ -1,0 +1,18 @@
+Para empezar un proyecto en laravel 
+
+Creamos proyecto (en la ruta deseada)
+laravel new Proyecto
+
+también podemos crear un proyecto utilizando
+composer create-project --dist-prefer laravel/laravel Proyecto
+
+
+Creando login:
+composer require laravel/ui --dev
+php artisan ui vue --auth
+npm install
+npm run dev
+npm run build 
+hp artisan optimize:clear
+php artisan ui:auth
+
