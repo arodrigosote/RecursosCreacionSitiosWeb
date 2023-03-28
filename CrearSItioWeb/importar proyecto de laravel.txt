@@ -1,0 +1,20 @@
+Para importar un proyecto en laravel 
+
+
+lo tenemos que importar o clonar desde un repositorio
+
+estando dentro de la carpeta del proyecto 
+
+ejecutamos:
+
+composer install //para este comando se debe de tener instalado todo lo del archivo de instalcion
+
+duplicamos el archivo .env.example y lo renombramos como .env, una vezz eso ejecutamos:
+
+php artisna key:generate
+
+y ya podemos correr el servidor
+
+php artisan serve
+
+

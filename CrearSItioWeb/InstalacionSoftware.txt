@@ -9,12 +9,22 @@ sudo apt install php8.0 apache2
 sudo dpkg --get-selections | grep php
 php --version
 
+modificar extension
+sudo nano /etc/ ... ruta archivo php.ini se puede saber corriendo php --ini
+
 instalando composer:
 sudo apt-get install composer
+
 
 Instalación laravel:
 composer global require laravel/installer
 
+instalando curl y xml
+sudo apt update
+sudo apt-get install php-curl php-xml
+
+reiniciando servidor
+sudo systemctl restart apache2
 
 instalando nodejs
 curl -sL https://deb.nodesource.com/setup_16.x | sudo -E bash -
