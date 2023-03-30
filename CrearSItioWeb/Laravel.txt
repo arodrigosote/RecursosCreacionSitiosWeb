@@ -7,12 +7,16 @@ también podemos crear un proyecto utilizando
 composer create-project --dist-prefer laravel/laravel Proyecto
 
 
+
 Creando login:
 composer require laravel/ui --dev
 php artisan ui vue --auth
 npm install
 npm run dev
 npm run build 
-hp artisan optimize:clear
+php artisan optimize:clear
 php artisan ui:auth
+
+sudo apt-get install php-mysql
+
 
