@@ -11,7 +11,7 @@ composer install //para este comando se debe de tener instalado todo lo del arch
 
 duplicamos el archivo .env.example y lo renombramos como .env, una vezz eso ejecutamos:
 
-php artisna key:generate
+php artisan key:generate
 
 y ya podemos correr el servidor
 
