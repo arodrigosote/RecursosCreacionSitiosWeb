@@ -1,0 +1,41 @@
+Requisitos
+
+php 7.4 >
+
+
+//Creamos proyecto en laravel
+composer create-project laravel/laravel:^8.0 example-app
+
+//configuramos la base de datos en el archivo env
+
+//dentro de la carpeta dle proyecto, en una terminal...
+
+//Creamos las tablas necesarias, en esta caso lo haremos de ejemplo con una tabla de dias
+php artisan make:model dia -m
+
+//Corremos las migraciones
+php artisan migrate
+
+//instalamos el crud generator
+composer require ibex/crud-generator --dev
+php artisan vendor:publish --tag=crud
+
+//con esto ya tenemos listo el crud para empezar a trabajarlo
+//con la migracion de dias, vamos a hacer el crud con:
+php artisan make:crud dias
+//damos y
+
+//ahora instalamos los estilos para hacerlo mas bonito utilizando laravel ui
+composer require laravel/ui
+php artisan ui bootstrap --auth
+npm install && npm run dev
+
+//si tenemos problemas con ese comando, corremos 
+npm fund fix --force
+
+//debemos de instalar un paquete llamado webpack, pero despues de agregarlo al momento de correr el npm run dev vamos a tener un error
+//para solucionarlo lo que debemos de hacer es dirigirnos al archivo package.json de nuestro proyecto y ahi 
+//buscar la linea del 'development', el comando a utilizar lo vamos a cambiar por el siguiente
+cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --config=node_modules/laravel-mix/setup/webpack.config.js
+
+//y volvemos a correr
