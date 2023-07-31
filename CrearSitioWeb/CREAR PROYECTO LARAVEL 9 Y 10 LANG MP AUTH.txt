@@ -1,0 +1,26 @@
+composer require laravel/ui
+
+php artisan ui bootstrap --auth
+
+composer require mercadopago/dx-php
+
+composer require ibex/crud-generator --dev
+
+php artisan vendor:publish --tag=crud
+
+composer require laravel-lang/common --dev
+
+php artisan lang:add es
+
+php artisan lang:update
+
+composer require barryvdh/laravel-dompdf
+
+npm install
+
+npm run build
+
+npm i laravel-mix
+
+
+
